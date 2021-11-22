@@ -1,0 +1,49 @@
+.principal{
+  text-align: center;
+  background-color: #4682B4;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 100px;
+  font-family: fantasy;
+}
+
+.ligne2{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+  }
+  .box{
+    width:33%;
+    border: 2px solid #4682B4;
+    border-radius: 15px;
+    padding: 0px 0px 0px 10px;
+    margin: 10px
+
+  }
+  .box h2{
+    color: #4682B4;
+    font-family: monospace ;
+    font-size: 25px
+  }
+
+.box a{
+  text-decoration: none;
+  color: #4682B4;  
+}
+.box a:hover{
+  color: blue;
+}
+.box p{
+  font-size: 17px;
+  padding-right: 10px;
+  font-family: fantasy;
+}
+
+@media screen and (max-width: 1000px){
+  .ligne2{
+  flex-direction: column;
+  }
+  .box{
+    width: 90%
+  }
+}

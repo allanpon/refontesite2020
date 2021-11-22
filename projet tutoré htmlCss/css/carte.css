@@ -1,0 +1,17 @@
+.ligne1{
+  border: 2px solid #4682B4;
+  display:  block;
+  margin: 20px;
+}
+
+.ligne1 h2{
+  color: #4682B4;
+  font-family: monospace ;
+  font-size: 25px;
+  text-align: center
+}
+
+.ligne1 img{
+  padding-left: 33%;
+  padding-right: 50%
+}

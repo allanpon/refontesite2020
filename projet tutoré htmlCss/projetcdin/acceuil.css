@@ -1,0 +1,343 @@
+body{
+  background-image: url("image/info4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  padding: 10px;
+
+}
+
+body > main{
+  width: 100%;
+  max-width: 1240px;
+  margin: 15px auto;
+  padding: 15px;
+
+  background-color: white;
+  border: 2px solid #4682B4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px ;
+}
+
+/* HEADER */
+
+header h1{
+  font-size: 33px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  background-color:lightblue;
+  margin: 0;
+}
+
+header a{
+  margin-right: 10px;
+  height: 0px;
+  width: 70px;
+}
+header img{
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+}
+
+header img:hover{
+  background-color: lightblue;
+}
+
+.recherche{
+  margin-left: 5px;
+  background-color: lightblue;
+  width: 20%;
+  font-size: 12px;
+  border-radius: 10px;
+  padding-left: 12px;
+  color: black;
+  font-weight: bold;
+  font-family: fantasy ;
+}
+
+@media screen and (max-width: 850px){
+  .recherche{
+  display: none;
+  }
+}
+/* fin du HEADER */
+
+/*1er menu */
+#menu{
+      background-color: #4682B4;
+      border-radius: 10px;
+      padding:20px;
+      text-align: center;
+      margin-bottom: 10px
+    }
+    #menu nav ul{
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+    }
+    #menu nav li{
+      flex: 1;
+      height:18px;
+      display:flex;
+    }
+    #menu nav a{
+      text-decoration: none;
+      color: #FFF;
+      font-size: 15px;
+      margin:auto;
+      font-family: fantasy;
+    }
+#menu nav a:hover{
+  color: black;
+  font-weight: bold;
+}
+    @media screen and (max-width: 800px) {
+      #menu nav ul{
+        flex-direction: column;
+      }
+      nav li{
+        padding: 3px
+      }
+      #menu{
+        margin: 10px
+      }
+}
+
+/*fin du 1er menu */
+
+/* GLOBAL CLASS et CSS */
+
+.wrap{
+  margin: 0 auto;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.flex-row{
+  display: flex;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.radius-10{
+  border-radius: 10px;
+}
+a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
+
+/* debut du bandeau d'image */
+table{
+  display: flex;
+  border: 2px solid #4682B4;
+  width: 100%;
+}
+table .img1, table .img3{
+  width: 100%
+}
+
+@media screen and (max-width: 650px){
+  table .img1, table .img3{
+    display: none;
+  }
+  table .img2{
+    width: 100%;
+  }
+  table{
+    margin: 10px;
+  }
+}
+/* fin du bandeau d'image */
+
+
+/* SECTION 1 */
+
+.section-1{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-1__card{
+          flex: 1;
+          max-width: 33.3333%;
+          min-width: 240px;
+          margin: 15px;
+
+        }
+        .section-1__card a{
+              box-shadow: 1px 1px 2px 2px #9f88773d;
+              background-color: lightblue;
+              /* centrage verticale avec elements collés en top et bottom + centrage horizontale : */
+              align-items: center;
+              justify-content: space-between;
+            }
+            .section-1__card a h2{
+              background-color: #4682B4;
+              color: white;
+              padding: 10px;
+              text-align: center;
+              width: 100%;
+              margin-bottom: 30px;
+              font-family: monospace;
+              font-size: 20px;
+            }
+            .section-1__card a img{
+              width: 100%;
+              max-width: 200px;
+              transition: all 200ms ease-in-out;
+            }
+            .section-1__card a:hover{
+              background: #2dc1ad;
+            }
+            .section-1__card a:hover img{
+              transform : scale(1.025);
+            }
+
+
+
+
+/* REPONSIVE MOBILE */
+
+@media screen and (max-width: 640px){
+
+  body > main{
+    padding: 0;
+  }
+
+  .section-1{
+        flex-direction: column;
+      }
+      .section-1__card{
+        max-width: 100%;
+        min-width: inherit;
+        margin: 0 15px 15px;
+      }
+      .section-1__card a img{
+        max-width: 80px;
+      }
+      .section-1__card a h2 {
+        font-size: 16px;
+        padding: 5px;
+        margin-bottom: 15px;
+      }
+      .ligne2{
+      flex-direction: column;
+    }
+    .liens, .photo{
+      width:1000%;
+      margin:0px;}
+}
+
+
+/*debut de la ligne principal */
+
+.principal{
+  text-align: center;
+  background-color: #4682B4;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 100px;
+  font-family: fantasy;
+}
+.principal h2{
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  font-family: monospace ;
+}
+/*fin de la ligne principal */
+
+/*ligne2*/
+.ligne2{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+  }
+  .liens{
+    width:60%;
+    border: 2px solid #4682B4;
+    border-radius: 15px;
+    padding: 0px 0px 0px 10px;
+
+  }
+  .liens h2{
+    color: #4682B4;
+    font-family: monospace ;
+    font-size: 25px
+
+  }
+.liens p{
+  font-size: 17px;
+  padding-right: 10px;
+  font-family: fantasy;
+}
+
+.liens a{
+  font-size: 15px;
+  padding-right: 10px;
+  color: black;
+  font-family: fantasy;
+  margin-bottom: 5px;
+}
+
+.liens a:hover{
+  color: blue;
+  font-weight: bold;
+}
+
+  .video{
+        width: 40%;
+        margin: auto 10px auto auto;
+      }
+      .video video{
+        width:100%;
+        border: 2px solid #4682B4;
+        border-radius: 15px;
+      }
+  .ligne2 .liens{
+      margin-right: 18px;
+      margin-left: 0px;
+  }
+
+@media screen and (max-width: 640px){
+  .ligne2{
+    margin-left: 10px
+  }
+}
+/* fin ligne2*/
+
+
+footer{
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 50px;
+  margin: auto 40px auto 40px ;
+  padding: 5px;
+  font-size: 18px;
+  padding: 5px 5px 5px 5px
+}
+footer a{
+  color: black;
+  font-family: fantasy;
+  font-size: 17px
+}
+
+footer:hover{
+  background-color: #2dc1ad;
+}
+footer a:hover{
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,240 @@
+body{
+  background-image: url("../image2/info1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  padding: 10px;
+
+}
+
+body > main{
+  width: 70%;
+  margin: 15px auto;
+  padding: 15px;
+
+  background-color: white;
+  border: 2px solid #4682B4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px ;
+}
+
+#menu2{
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  #menu{
+    display: none
+  }
+  #menu2{
+      display: block;
+      background-color: #4682B4;
+      border-radius: 10px;
+      padding:20px;
+      text-align: center;
+      margin-bottom: 10px
+    }
+    #menu2 nav ul{
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+    }
+    #menu2 nav li{
+      flex: 1;
+      height:20px;
+      display:flex;
+    }
+    #menu2 nav a{
+      text-decoration: none;
+      color: #FFF;
+      font-size: 13px;
+      margin:auto;
+      font-family: fantasy;
+    }
+#menu2 nav a:hover{
+  color: black;
+  font-weight: bold;
+}
+    @media screen and (max-width: 1100px) {
+      #menu2 nav ul{
+        flex-direction: column;
+      }
+      nav li{
+        padding:5px
+      }
+      #menu2{
+        margin: 10px
+      }
+}
+}
+
+/* HEADER */
+
+header h1{
+  font-size: 33px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  background-color:lightblue;
+  margin: 0;
+}
+
+header a{
+  margin-right: 10px;
+  height: 0px;
+  width: 70px;
+}
+header img{
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+}
+
+header img:hover{
+  background-color: lightblue;
+}
+
+.recherche{
+  margin-left: 5px;
+  background-color: lightblue;
+  width: 25%;
+  font-size: 12px;
+  border-radius: 10px;
+  padding-left: 12px;
+  color: black;
+  font-weight: bold;
+  font-family: fantasy ;
+}
+
+.wrap{
+  margin: 0 auto;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.flex-row{
+  display: flex;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.radius-10{
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px){
+  .recherche{
+  display: none;
+  }
+}
+/* fin du HEADER */
+/* NAVBAR LEFT */
+#menu {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 170px;
+    left: 10px; /* width = 200px */
+    top: 95px;
+  }
+  #menu ul{
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  #menu li {
+    border: 1px solid #41A0D6;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+  #menu li a {
+    max-width: 100%;
+    padding: 7px;
+    background: #1B6DA5;
+    color: #fff ;
+    display: block ;
+    font: .9em "Trebuchet MS",Arial,sans-serif ;
+    line-height: 1.25em ;
+    text-decoration: none ;
+    color: #FFF;
+    text-align: left;
+    transition: background 200ms ease-in-out;
+  }
+  #menu li a:hover,
+  #navigation li a:focus,
+  #navigation li a:active {
+    background: #01518C;
+    text-decoration: none ;
+  }
+
+  /* SUB MENU */
+  #menu .sub-menu{
+      position: relative;
+
+    }
+    #menu .sub-menu > ul{
+      transition: all 200ms ease-in-out;
+      position: absolute;
+      width: 100%;
+      right: 1px; /* border */
+      top: -1px; /* border */
+      background: #bf6767;
+      z-index: -1;
+    }
+    #menu .sub-menu:hover ul{
+      right: -100%;
+    }
+  /* END SUB MENU */
+
+/* debut du bandeau d'image */
+table{
+  display: flex;
+  border: 2px solid #4682B4;
+  width: 100%;
+}
+table .img1, table .img3{
+  width: 100%
+}
+
+@media screen and (max-width: 650px){
+  table .img1, table .img3{
+    display: none;
+  }
+  table .img2{
+    width: 100%;
+  }
+  table{
+    margin: 10px;
+  }
+}
+/* fin du bandeau d'image */
+
+/* END NAVBAR LEFT */
+footer{
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 50px;
+  padding: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+
+}
+footer a{
+  text-decoration: none;
+  color: black;
+  font-family: fantasy;
+  font-size: 17px
+}
+
+footer:hover{
+  background-color: #2dc1ad;
+}
+footer a:hover{
+  color: white;
+  font-weight: bold;
+}

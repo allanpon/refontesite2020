@@ -1,0 +1,60 @@
+/*ligne2*/
+.ligne2{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+  }
+
+.ligne3{
+  display: flex;
+  flex-direction: row;
+
+}
+  .ligne2 .texte{
+    width:50%;
+    border: 2px solid #4682B4;
+    border-radius: 15px;
+    padding: 0px 0px 0px 10px;
+  }
+.ligne3 .texte{
+    width:100%;
+    border: 2px solid #4682B4;
+    border-radius: 15px;
+    padding: 0px 0px 0px 10px;
+}
+  .texte h2{
+    color: #4682B4;
+    font-family: monospace ;
+    font-size: 25px
+  }
+
+.texte p{
+  font-size: 15px;
+  padding-right: 10px;
+  font-family: fantasy;
+}
+  .image{
+        width: 50%;
+        margin: auto 10px auto auto;
+      }
+      .image img{
+        width:100%;
+        border: 2px solid #4682B4;
+        border-radius: 15px;
+      }
+  .ligne2 .texte{
+      margin-right: 10px;
+      margin-left: 0px;
+  }
+  .ligne3 .texte{
+      margin-right: 0px;
+      margin-left: 4px;
+  }
+
+
+@media screen and (max-width: 640px){
+  .ligne2{
+    margin-left: 10px;
+  }
+}
+
